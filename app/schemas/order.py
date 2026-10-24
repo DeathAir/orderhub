@@ -5,7 +5,7 @@ from pydantic import BaseModel, ConfigDict
 
 class OrderCreate(BaseModel):
     order_id: str
-    amount: int
+    amount: float
 
 class OrderResponse(BaseModel):
     id: int
